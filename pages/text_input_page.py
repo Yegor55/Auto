@@ -26,3 +26,9 @@ class TextInputPage:
         expect(self.page.locator("input:invalid")).to_be_visible()
         is_valid = self.input_box.evaluate("el => el.checkValidity()")
         assert is_valid is False
+
+    def go_to_email_field(self) -> None:
+        self.page.click("text=Email field")
+
+    def go_to_email_field(self) -> None:
+        self.page.click("text=Email field")
